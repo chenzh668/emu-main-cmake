@@ -44,6 +44,10 @@ typedef struct {
     int balance_rate;
     int sys_max_pw;
     int flag_init_lcd;
+
+   //BMS参数 用于lcd模块做判断对pcs停机
+	int Maximum_individual_voltage; //电池分系统 n 单体最高电压  
+	int Minimum_individual_voltage;//电池分系统 n 单体最低电压 
 ////
 //    char bams1_pcsid[8];
 //    char bams2_pcsid[8];

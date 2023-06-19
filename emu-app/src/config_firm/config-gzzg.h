@@ -38,6 +38,8 @@ configPara  conf_tab[] = {
 		{"plc_server_port",TY_INT,"2502"},
 		{"balance_rate",TY_INT,"100"},		//均衡速度,精度0.01
 		{"sys_max_pw",TY_INT,"18000"},		//系统定义最大功率,精度0.01
+		{"Maximum_individual_voltage",TY_INT,"3550"}, //电池分系统 n 单体最高电压 （ 变比（十进制）x*1000）
+     	{"Minimum_individual_voltage",TY_INT,"2900"},//电池分系统 n 单体最低电压  （变比（十进制）x*1000）
 
 
 		{"LOG_DAYS",TY_INT,"30"},//日志记录天数

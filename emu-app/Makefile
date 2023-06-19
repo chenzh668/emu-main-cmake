@@ -57,18 +57,18 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/hgfs/off-zgemu/emu-main-cmake/emu-app
+CMAKE_SOURCE_DIR = /media/sf_work/zgEMU_gs/emu-main-cmake/emu-app
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/hgfs/off-zgemu/emu-main-cmake/emu-app
+CMAKE_BINARY_DIR = /media/sf_work/zgEMU_gs/emu-main-cmake/emu-app
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/local/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/local/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/off-zgemu/emu-main-cmake/emu-app/CMakeFiles /mnt/hgfs/off-zgemu/emu-main-cmake/emu-app//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/sf_work/zgEMU_gs/emu-main-cmake/emu-app/CMakeFiles /media/sf_work/zgEMU_gs/emu-main-cmake/emu-app//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/off-zgemu/emu-main-cmake/emu-app/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/sf_work/zgEMU_gs/emu-main-cmake/emu-app/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/hgfs/off-zgemu/emu-main-cmake/emu-app/src/common/log_main.cpp" "CMakeFiles/emu-app.dir/src/common/log_main.cpp.o" "gcc" "CMakeFiles/emu-app.dir/src/common/log_main.cpp.o.d"
-  "/mnt/hgfs/off-zgemu/emu-main-cmake/emu-app/src/main_pro/TaskMain.cpp" "CMakeFiles/emu-app.dir/src/main_pro/TaskMain.cpp.o" "gcc" "CMakeFiles/emu-app.dir/src/main_pro/TaskMain.cpp.o.d"
-  "/mnt/hgfs/off-zgemu/emu-main-cmake/emu-app/src/main_pro/program.cpp" "CMakeFiles/emu-app.dir/src/main_pro/program.cpp.o" "gcc" "CMakeFiles/emu-app.dir/src/main_pro/program.cpp.o.d"
+  "/media/sf_work/zgEMU_gs/emu-main-cmake/emu-app/src/common/log_main.cpp" "CMakeFiles/emu-app.dir/src/common/log_main.cpp.o" "gcc" "CMakeFiles/emu-app.dir/src/common/log_main.cpp.o.d"
+  "/media/sf_work/zgEMU_gs/emu-main-cmake/emu-app/src/main_pro/TaskMain.cpp" "CMakeFiles/emu-app.dir/src/main_pro/TaskMain.cpp.o" "gcc" "CMakeFiles/emu-app.dir/src/main_pro/TaskMain.cpp.o.d"
+  "/media/sf_work/zgEMU_gs/emu-main-cmake/emu-app/src/main_pro/program.cpp" "CMakeFiles/emu-app.dir/src/main_pro/program.cpp.o" "gcc" "CMakeFiles/emu-app.dir/src/main_pro/program.cpp.o.d"
   )
 
 # Targets to which this target links.

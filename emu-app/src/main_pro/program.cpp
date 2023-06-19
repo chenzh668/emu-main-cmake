@@ -48,7 +48,7 @@ char workdir_str[1024];
 
 void initLCD(void)
 {
-   #define LIB_LCD_PATH "/usr/lib/libmodtcp.so"
+   #define LIB_LCD_PATH "/usr/local/lib/libmodtcp.so"
    typedef int (*p_initlcd)(void*);
 	void *handle;
 	char *error;
@@ -206,7 +206,13 @@ void saveval(pconf *ppconf,int i,int val,char* strval)
 
 		sprintf(ppconf->main_ver, "%s\n", strval);
 		printf("tcu主控版本号  =%s\r\n ",ppconf->main_ver);//tcu主控版本号
-	}
+	} else if (strcmp(conf_tab[i].name, "Maximum_individual_voltage") == 0){
+		printf("最高单体电压:%d\n",val);//2
+	  	ppconf->Maximum_individual_voltage = val;
+	 } else if (strcmp(conf_tab[i].name, "Minimum_individual_voltage") == 0) {
+		 printf("最低单体电压:%d\n",val);//2
+	 	 ppconf->Minimum_individual_voltage = val;
+	 } 
 
 }
 
@@ -332,7 +338,7 @@ void create_objects()
     	if(conf_tab[i].typeVal==TY_INT)
     		cJSON_AddNumberToObject(root,conf_tab[i].name,atoi(conf_tab[i].val));
     	else
-    	   cJSON_AddItemToObject(root, conf_tab[i].name,  cJSON_CreateString(conf_tab[i].val));
+    	    cJSON_AddItemToObject(root, conf_tab[i].name,  cJSON_CreateString(conf_tab[i].val));
     }
 	out=cJSON_Print(root);
 
