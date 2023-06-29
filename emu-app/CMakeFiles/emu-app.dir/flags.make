@@ -4,7 +4,7 @@
 # compile CXX with /opt/gcc-linaro-arm-linux-gnueabihf-4.7-2013.03-20130313_linux/bin/arm-linux-gnueabihf-g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/media/sf_work/zgEMU_gs/emu-main-cmake/emu-app/src/include -I/media/sf_work/zgEMU_gs/emu-main-cmake/emu-app/src/config_firm -I/media/sf_work/zgEMU_gs/emu-main-cmake/emu-app/src/common
+CXX_INCLUDES = -I/media/sf_work/AAA/ZGEMU/emu-main-cmake/emu-app/src/include -I/media/sf_work/AAA/ZGEMU/emu-main-cmake/emu-app/src/config_firm -I/media/sf_work/AAA/ZGEMU/emu-main-cmake/emu-app/src/common
 
 CXX_FLAGS = 
 

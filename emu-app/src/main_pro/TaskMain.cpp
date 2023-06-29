@@ -33,6 +33,7 @@ int main(int argc, char *argv[])
 
     pconfig->hardware_ver=TCU_Type;
     pconfig->flag_init_lcd=flag_init_lcd;
+	printf("emu-app 模块启动 最高单体电压=%d  最低单体电压=%d\n",pconfig->Maximum_individual_voltage,pconfig->Minimum_individual_voltage);
 	sprintf(_tmp_print_str,"测试得到硬件版本=%d\n",TCU_Type);
 	fs_debug(_tmp_print_str);
 

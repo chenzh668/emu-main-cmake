@@ -1,4 +1,4 @@
-# Install script for directory: /media/sf_work/zgEMU_gs/emu-main-cmake/emu-app
+# Install script for directory: /media/sf_work/AAA/ZGEMU/emu-main-cmake/emu-app
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/media/sf_work/zgEMU_gs/emu-main-cmake/emu-app/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/media/sf_work/AAA/ZGEMU/emu-main-cmake/emu-app/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
